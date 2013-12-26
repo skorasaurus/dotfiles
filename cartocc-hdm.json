@@ -1,0 +1,44 @@
+[
+ 
+    {
+        "if": {
+            "Datasource.type": "postgis"
+        },
+        "then": {
+            "Datasource.dbname": "hdm",
+            "Datasource.user": "skors"
+        }
+    },
+   {
+        "if": {
+            "id": "land-high"
+        },
+        "then": {
+            "Datasource.file": "/home/skors/Documents/MapBox/project/shared/land-polygons-split-3857-shapeindex/land_polygons.shp"
+        }
+    },    
+      {
+        "if": {
+            "id": "hillshade"
+        },
+        "then": {
+            "Datasource.file": "/home/skors/Documents/MapBox/project/shared/haiti-hillshade-80-3785.tif"
+        }
+    },
+       {
+        "if": {
+            "id": "contour_line"
+        },
+        "then": {
+            "Datasource.file": "/home/skors/Documents/MapBox/project/shared/haiti_contour_25m.shp"
+        }
+    },
+    {
+        "if": {
+            "id": "land-low"
+        },
+        "then": {
+            "Datasource.file": "/home/skors/Documents/MapBox/project/shared/simplified-land-polygons-complete-3857-shapeindex/simplified_land_polygons.shp"
+        }
+    }
+]
