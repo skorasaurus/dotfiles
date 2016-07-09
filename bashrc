@@ -123,6 +123,9 @@ alias cfa='cd /home/skors/gis/cfa/'
 alias rubio='cd /home/skors/prg/skorasaurus.github.io/ && source /home/skors/.rvm/scripts/rvm && jekyll serve'
 alias josmupdate='cd ~/ && python ~/gis/geoscripts/downloadupdatejosm.py'
 alias activ='source .venv/bin/activate'
+alias p3='mkdir .venv && virtualenv -p /usr/bin/python3 --no-site-packages .venv'
+alias p2='mkdir .venv && virtualenv -p /usr/bin/python --no-site-packages .venv'
+
 
 # set tab as default for xmllint --format
 export XMLLINT_INDENT=$'\t'
