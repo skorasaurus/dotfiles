@@ -1,0 +1,1 @@
+PATH DEFAULT=${PATH}:${HOME}/prg:/opt/osmosis/bin:/opt:/opt/bin:${HOME}/npm/bin:${HOME}/gis/scripts:${HOME}/gis/geoscripts:${HOME}/android-sdk-linux/tools:${HOME}/android-sdk/sdk/platform-tools:${HOME}/node_modules/bin:${HOME}/.local/lib:${HOME}/scripts
