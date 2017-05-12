@@ -141,7 +141,7 @@ export PATH="/usr/local/heroku/bin:$PATH"
 export PATH="$PATH:~/prg/android-sdk-linux/platform-tools"
 
 # additional paths from .pam_environment
-EXPORT PATH DEFAULT=${PATH}:${HOME}/prg:/opt/osmosis/bin:/opt:/opt/bin:${HOME}/npm/bin:${HOME}/gis/scripts:${HOME}/gis/geoscripts:${HOME}/android-sdk-linux/tools:${HOME}/android-sdk/sdk/platform-tools:${HOME}/node_modules/bin:${HOME}/.local/lib
+export PATH="${PATH}:${HOME}/prg:/opt/osmosis/bin:/opt:/opt/bin:${HOME}/npm/bin:${HOME}/gis/scripts:${HOME}/gis/geoscripts:${HOME}/android-sdk-linux/tools:${HOME}/android-sdk/sdk/platform-tools:${HOME}/node_modules/bin:${HOME}/.local/lib"
 
 
 
