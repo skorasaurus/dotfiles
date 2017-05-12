@@ -125,7 +125,7 @@ alias netreset='sudo service network-manager restart'
 # ref http://forum.serviio.org/viewtopic.php?t=22591
 
 function tcodemkv() 
-{ ffmpeg -i $1 -map 0 -c:v copy -c:a ac3 -c:s copy $2 
+{ ffmpeg -i "$1" -map 0 -c:v copy -c:a ac3 -c:s copy "$2" 
 }
 
 # set tab as default for xmllint --format
