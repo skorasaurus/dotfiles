@@ -105,23 +105,26 @@ if [ -f ~/.bash_aliases ]; then
     . ~/.bash_aliases
 fi
 
-
-alias cdhdm='cd ~/Documents/MapBox/project/HDM-CartoCSS'
-alias cushdm='cd ~/Documents/MapBox/project && ~/prg/node_modules/cartocc/bin/cartocc hdm' 
-alias udtm2='cd ~/prg/tm2 && rm -rf node_modules && git pull upstream mb-pages && npm install'
-alias ffg='firefox --p -no-remote'
-alias sserver='python -m SimpleHTTPServer'
-alias cfa='cd ~/gis/cfa/'
-alias cfarubio='cd ~/prg/opencleveland.github.io/ && source ~/.rvm/scripts/rvm && jekyll serve'
-alias rubio='cd ~/prg/skorasaurus.github.io/ && source ~/.rvm/scripts/rvm && jekyll serve'
-alias josmupdate='cd ~/ && python ~/gis/geoscripts/downloadupdatejosm.py'
 alias activ='source .venv/bin/activate'
-alias p3='mkdir .venv && virtualenv -p /usr/bin/python3 --no-site-packages .venv'
-alias p2='mkdir .venv && virtualenv -p /usr/bin/python --no-site-packages .venv'
+alias cdhdm='cd ~/Documents/MapBox/project/HDM-CartoCSS'
+alias cfa='cd ~/gis/cfa/'
+alias cfarubio='cd ~/prg/opencleveland.github.io/ && source /home/skors/.rvm/scripts/rvm && jekyll serve'
+alias cushdm='cd ~/Documents/MapBox/project && ~/prg/node_modules/cartocc/bin/cartocc hdm' 
+alias dmesgt='dmesg -T | tail -n 50'
+alias ffg='firefox --p -no-remote'
+alias josmupdate='cd ~/ && python ~/gis/geoscripts/downloadupdatejosm.py'
+alias nano='nano -c' # auto-add line numbers
 alias netreset='sudo service network-manager restart'
+alias p2='mkdir .venv && virtualenv -p /usr/bin/python --no-site-packages .venv'
+alias p3='mkdir .venv && virtualenv -p /usr/bin/python3 --no-site-packages .venv'
+alias rubio='cd ~/prg/skorasaurus.github.io/ && source /home/skors/.rvm/scripts/rvm && jekyll serve --watch'
+alias sserver='python -m SimpleHTTPServer'
+alias udtm2='cd ~/prg/tm2 && rm -rf node_modules && git pull upstream mb-pages && npm install'
+alias vsassy='cd ~/Documents/cpl/tempera-nocopyrt && grunt sass && rsync -ra --exclude=.git --exclude=.idea * ~/prg/VVV/www/wordpress-default/public_html/wp-content/themes/tempera-nocopyrt'
+# preepare node and ruby for the wp development
+alias lsassy='cd ~/Documents/cpl/tempera-nocopyrt && nvm use v7.9.0 && source /home/skors/.rvm/scripts/rvm'
 
-
-#used to transcode audio (AC/3) to standard format for blueray players
+#used to transcode audio (AC/3) to standard format
 # ref http://forum.serviio.org/viewtopic.php?t=22591
 
 function tcodemkv() 
@@ -138,13 +141,10 @@ export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 export PATH="/usr/local/heroku/bin:$PATH"
 
 ## i added for using adb easily. 
-export PATH="$PATH:~/prg/android-sdk-linux/platform-tools"
+export PATH="$PATH:/home/skors/prg/android-sdk-linux/platform-tools"
 
 # additional paths from .pam_environment
 export PATH="${PATH}:${HOME}/prg:/opt/osmosis/bin:/opt:/opt/bin:${HOME}/npm/bin:${HOME}/gis/scripts:${HOME}/gis/geoscripts:${HOME}/android-sdk-linux/tools:${HOME}/android-sdk/sdk/platform-tools:${HOME}/node_modules/bin:${HOME}/.local/lib"
-
-
-
 
 # enable programmable completion features (you don't need to enable
 # this, if it's already enabled in /etc/bash.bashrc and /etc/profile
@@ -159,3 +159,4 @@ fi
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+
